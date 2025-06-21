@@ -1,0 +1,18 @@
+h1{
+    color:rgb(101, 185, 112);
+}
+h1:hover{
+    font-size: 50px;
+    color: aqua;
+    background-color: black;
+}
+img{
+    border: inset rgba(38, 0, 255, 0.788) 20px;
+    border-radius: 5%;
+    box-shadow: 2px 0px 101px 58px rgba(0,255,255,0.55) inset;
+-webkit-box-shadow: 2px 0px 101px 58px rgba(0,255,255,0.55) inset;
+-moz-box-shadow: 2px 0px 101px 58px rgba(0,255,255,0.55) inset;
+   filter: sepia(46%) brightness(74%) saturate(396%);
+-webkit-filter: sepia(46%) brightness(74%) saturate(396%);
+-moz-filter: sepia(46%) brightness(74%) saturate(396%);
+}
