@@ -1,0 +1,123 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(235, 245, 235); /* Very light green background */
+    margin: 0;
+}
+
+/* Container for the BMI calculator */
+#root { /* Assuming your React app mounts to a div with id "root" */
+    background-color: rgb(255, 255, 255); /* White background */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+
+/* Heading styles */
+h1 {
+    color: rgb(68, 85, 68); /* Dark green text */
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+/* Input field styles */
+input[type="text"],
+input[type="number"] { /* Although the example uses text, number is more appropriate for these inputs */
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid rgb(173, 216, 173); /* Light green border */
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+/* Label text for inputs */
+label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    color: rgb(85, 102, 85); /* Medium green text */
+    font-size: 1.1em;
+}
+
+/* Button styles */
+button {
+    background-color: rgb(76, 175, 80); /* Green background */
+    color: rgb(255, 255, 255); /* White text */
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: rgb(53, 128, 56); /* Darker green background on hover */
+}
+
+/* BMI result display */
+div { /* This will target the div containing Bmi: {bmi.toFixed(2)} and BmiText */
+    margin-top: 25px;
+    font-size: 1.2em;
+    color: rgb(68, 85, 68); /* Dark green text */
+}
+
+/* Styles for BmiText component outputs */
+.BmiText h1 {
+    font-size: 1.8em;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+/* Specific colors for different BMI categories */
+.BmiText h1 {
+    color: rgb(68, 85, 68); /* Default color, overridden below */
+}
+
+/* Apply specific colors based on BMI category if you want to add classes in BmiText */
+/* Example: if BmiText rendered <h1 class="underweight"> or similar */
+/*
+.underweight {
+    color: rgb(255, 193, 7); // Yellow/Orange
+}
+
+.normal {
+    color: rgb(40, 167, 69); // Green
+}
+
+.overweight {
+    color: rgb(220, 53, 69); // Red
+}
+*/
+
+/* Image styling within BmiText */
+.BmiText img {
+    margin-top: 10px;
+    max-width: 100px; /* Adjust as needed */
+    height: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    #root {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    button {
+        padding: 10px 15px;
+        font-size: 1em;
+    }
+}
